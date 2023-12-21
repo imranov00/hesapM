@@ -30,8 +30,17 @@ public class hesap {
                 System.out.println("Cevap: " + ((n1*n2)));
                 break;
             case 4:
-                System.out.println("Cevap:  "+ ((n1/n2)));
+                if (n2 == 0) {
+                    System.out.println("Bir Sayıyı Sıfıra Bölemezsiniz.");
+
+                } else {
+                    System.out.println("Cevap : " + (n1 / n2));
+                }
                 break;
+
+            default:
+                System.out.println("Hatalı Giriş Yaptınız. Tekrar Deneyiniz!");
+        }
 
         }
 
@@ -39,4 +48,4 @@ public class hesap {
 
     }
 
-}
+
